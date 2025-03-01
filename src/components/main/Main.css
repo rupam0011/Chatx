@@ -115,6 +115,7 @@
     padding: 8px;
     color: white;
     font-size: 18px;
+    
 }
 
 .search-box input::placeholder {
@@ -202,7 +203,7 @@
 @media(max-width:600px){
     .main-bottom input{
         flex: none;
-        width: 150px;
+        width: 240px;
     }
 
     .main-bottom img{
