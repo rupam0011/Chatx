@@ -1,0 +1,112 @@
+
+.sidebar{
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #282a2c;
+    color: white;
+    padding: 10px 10px;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out; /* Smooth transition */
+    width: 80px; /* Collapsed width */
+    overflow: hidden;
+}
+.sidebar.extended {
+    width: 220px; /* Expanded width */
+    padding: 10px 20px;
+}
+.sidebar img{
+    width: 20px;
+    filter: invert(1);
+    
+}
+
+.sidebar .menu{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.sidebar .new-chat{
+    margin-top: 50px ;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #202123;
+    border-radius: 50px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.sidebar .new-chat p{
+    margin: 5px 0;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .new-chat img{
+    filter: invert(1) brightness(1000%) contrast(60%);
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    padding-right: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    /* transition: all 0.3s; */
+    /* border: 2px solid firebrick; */
+}
+.sidebar .recent-entry:hover{
+    background-color: #36393d;
+}
+
+.sidebar .recent-entry p{
+    /* border: 1px solid green; */
+    margin: 5px 0;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom .bottom-item{
+    /* padding-right: 10px; */
+    /* border: 2px solid red; */
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
