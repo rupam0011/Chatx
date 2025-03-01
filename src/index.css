@@ -9,11 +9,11 @@
 #root{
   min-height: 100vh;
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Black Fade-in Effect */
-#root::before {
+/* #root::before {
   content: "";
   position: absolute;
   top: 0;
@@ -23,10 +23,10 @@
   background-color: black;
   z-index: 999;
   animation: blackFadeOut 1.2s forwards;
-}
+} */
 
 /* Animation to fade out the black overlay */
-@keyframes blackFadeOut {
+/* @keyframes blackFadeOut {
   0% {
     opacity: 0.8;
   }
@@ -34,4 +34,4 @@
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
