@@ -201,6 +201,7 @@
 }
 
 @media(max-width:600px){
+    
     .main-bottom input{
         flex: none;
         width: 240px;
@@ -212,6 +213,12 @@
 
     .search-box{
         padding: 5px 10px;
+    }
+    .main .greet{
+        font-size: 40px;
+    }
+    .main .cards{
+        display: none;
     }
 }
 
